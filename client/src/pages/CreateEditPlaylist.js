@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Player from "../components/Player";
-import { HideLoading, ShowLoading } from "../redux/alertsSlice";
+import { HideLoading, ShowLoading } from "../redux/alertSlice";
 import {
   SetSelectedPlaylist,
   SetSelectedPlaylistForEdit,

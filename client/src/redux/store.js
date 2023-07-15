@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { alertsSlice } from './alertsSlice'
+import { alertsSlice } from './alertSlice'
 import { userSlice } from './userSlice'
 import {configureStore} from '@reduxjs/toolkit'
 

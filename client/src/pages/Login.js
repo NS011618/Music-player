@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import { HideLoading, ShowLoading } from "../redux/alertsSlice";
+import { HideLoading, ShowLoading } from "../redux/alertSlice";
 import { useDispatch } from "react-redux";
 import toast from "react-hot-toast";
 
@@ -48,7 +48,7 @@ function Login() {
           value={user.password}
           onChange={(e) => setUser({ ...user, password: e.target.value })}
         />
-        <button className="primary bg-orange-500" onClick={login}>
+        <button className="primary bg-primary" onClick={login}>
           Login
         </button>
         <Link to="/register" className="text-secondary underline">
@@ -58,7 +58,7 @@ function Login() {
       <div>
         <img
           className="h-[500px]"
-          src="register.jpg"
+          src="https://img.freepik.com/premium-photo/3d-rendering-3d-illustration-red-black-music-note-icon-isolated-white-background-song-melody-tune-symbol-concept_640106-443.jpg?w=2000"
           alt=""
         />
       </div>

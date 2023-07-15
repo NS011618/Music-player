@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { SetAllSongs, SetUser } from "../redux/userSlice";
-import { HideLoading, ShowLoading } from "../redux/alertsSlice";
+import { HideLoading, ShowLoading } from "../redux/alertSlice";
 import DefaultLayout from "./DefaultLayout";
 
 function ProtectedRoute({ children }) {

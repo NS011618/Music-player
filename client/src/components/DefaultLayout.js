@@ -7,12 +7,12 @@ function DefaultLayout({children}) {
  const navigate = useNavigate()
   return (
      <div className="main">
-         <div className="header flex justify-between p-5 shadow items-center">
-             <h1 className='text-3xl ml-7 font-bold cursor-pointer' onClick={()=>{
+         <div className="header flex justify-between p-5 bg-green-300 shadow items-center">
+             <h1 className='text-2xl ml-7 bg-white p-2 shadow font-bold cursor-pointer' onClick={()=>{
                     navigate('/')
-             }}><b className='text-primary'>SHEY</b> <b className='text-secondary'>MUSIC</b></h1>
-             <div className='flex items-center gap-2'>
-                <h1 className='text-xl'>{user?.name.toUpperCase()}</h1>
+             }}><b className='text-primary'>MUSIC</b> <b className='text-secondary'>PLAYER</b></h1>
+             <div className='flex items-center bg-white shadow p-3 gap-2'>
+                <h1 className='text-lg'>{user?.name.toUpperCase()}</h1>
                 <i className="ri-logout-circle-r-line text-xl cursor-pointer" onClick={()=>{
                     localStorage.removeItem('token')
                     window.location.reload()

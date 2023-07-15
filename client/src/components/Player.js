@@ -68,8 +68,8 @@ function Player() {
   }, []);
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 p-5 shadow-lg bg-white">
-      <div className="flex justify-between items-center border p-5 border-green-500 rounded shadow-xl">
+    <div className="absolute bottom-0 left-0 right-0 p-2 shadow-lg bg-white">
+      <div className="flex justify-between items-center border p-3 border-green-500 rounded shadow-xl">
         <div className="flex items-center gap-2 w-96">
           <img
             className="h-20 w-32"
@@ -132,7 +132,7 @@ function Player() {
 
         <div className="flex gap-3 items-center">
           <i
-            className="ri-volume-mute-line text-3xl text-gray-500"
+            className="ri-volume-mute-line text-2xl text-gray-500"
             onClick={() => {
               setVolume(0);
               audioRef.current.volume = 0;
@@ -151,7 +151,7 @@ function Player() {
             }}
           />
           <i
-            className="ri-volume-down-line text-3xl text-gray-500"
+            className="ri-volume-down-line text-2xl text-gray-500"
             onClick={() => {
               setVolume(1);
               audioRef.current.volume = 1;

@@ -19,7 +19,7 @@ input:focus{
 }
 
 .primary{
-    color: white;
+    color: rgb(124, 189, 214);
     border:none !important;
     padding: 7px 0;
 }

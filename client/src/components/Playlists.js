@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { HideLoading, ShowLoading } from "../redux/alertsSlice";
+import { HideLoading, ShowLoading } from "../redux/alertSlice";
 
 import {
   SetSelectedPlaylist,

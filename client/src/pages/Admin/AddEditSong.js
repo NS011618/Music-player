@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { FileUploader } from "react-drag-drop-files";
-import { HideLoading, ShowLoading } from "../../redux/alertsSlice";
+import { HideLoading, ShowLoading } from "../../redux/alertSlice";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { SetAllSongs } from "../../redux/userSlice";

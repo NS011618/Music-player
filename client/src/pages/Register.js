@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { HideLoading, ShowLoading } from "../redux/alertsSlice";
+import { HideLoading, ShowLoading } from "../redux/alertSlice";
 import toast from "react-hot-toast";
 
 function Register() {
@@ -35,7 +35,7 @@ function Register() {
       <div>
         <img
           className="h-[500px]"
-          src="login.jpg"
+          src="https://img.freepik.com/premium-photo/3d-rendering-3d-illustration-red-black-music-note-icon-isolated-white-background-song-melody-tune-symbol-concept_640106-443.jpg?w=2000"
           alt=""
         />
       </div>
@@ -60,7 +60,7 @@ function Register() {
           value={user.password}
           onChange={(e) => setUser({ ...user, password: e.target.value })}
         />
-        <button className="primary bg-orange-500" onClick={register}>
+        <button className="primary bg-primary" onClick={register}>
           Register
         </button>
         <Link to="/login" className="text-secondary underline">
