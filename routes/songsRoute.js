@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const authMiddleware = require("../middlewares/authMiddleware");
 const Song = require("../models/songModel");
-const User = require("../models/userModel");
+const User = require("../models/userModel.js");
 
 router.post("/get-all-songs", authMiddleware, async (req, res) => {
   try {

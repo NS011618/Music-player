@@ -23,7 +23,7 @@ router.post(
       cloudinary.v2.uploader.upload(
         req.file.path,
         {
-          folder: "sheymusic-udmey",
+          folder: "songs",
           use_filename: true,
           resource_type: "raw",
         },
@@ -41,7 +41,7 @@ router.post(
               year: req.body.year,
             });
             await newsong.save();
-            const allSongs = await Song.find();
+            const allmusic = await Song.find();
             res.status(200).send({
               message: "Song added successfully",
               success: true,
@@ -69,7 +69,7 @@ router.post(
       let response = null;
       if (req.file) {
         response = await cloudinary.v2.uploader.upload(req.file.path, {
-          folder: "sheymusic-udmey",
+          folder: "music",
           use_filename: true,
           resource_type: "raw",
         });
